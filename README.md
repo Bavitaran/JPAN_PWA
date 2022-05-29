@@ -62,3 +62,22 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+ADDING PWA code to blade file commands:
+<!-- Before Head closing -->
+<!-- PWA -->
+<meta name="theme-color" content="#6777ef"/>
+<link rel="apple-touch-icon" href="{{ asset( 'images/logo.png' ) }}">
+<link rel="manifest" href="{{ asset('/manifest.json') }}">
+
+
+<!-- Before Body  closing-->
+<script src="{{ asset('/sw.js') }}" ></script>
+<script>
+    if(!navigator.serviceWorker.controller){
+        navigator.serviceWorker.register("/sw.js").then( function(reg)
+        {
+            console.log("Service worker has been registered for scope: " + reg.scope );
+        });
+    }
+</script>
