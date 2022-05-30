@@ -15,14 +15,17 @@
 
         </style>
 
+        <!-- Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-        <!-- Import Stylesheet  -->
-        <link rel="stylesheet" type="text/css" href="{{ url('/css/navbar.css') }}" />
+            <!-- Import Stylesheet  -->
+            <link rel="stylesheet" type="text/css" href="{{ url('./css/navbar.css') }}" />
 
         <style>
             body {
@@ -42,20 +45,68 @@
                 grid:
                     "sidebar body" 1fr
                     / auto 1fr;
-                gap: 8px;
+                gap: 0;
                 }
 
-                .sidebar { grid-area: sidebar; }
-                .body { grid-area: body; }
+            .sidebar { grid-area: sidebar; }
+            .panel { 
+                padding: 30% 0% 5% 20%;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 10px;
+            }
+            .grid-item {
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 15px;
+                background-color: #fff;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+            .panel { 
+                padding: 15% 0% 5% 20%;
+            }
+            .panel-title {
+                text-align: left;
+            }
+            .panel-tile{
+                padding: 25px;
+                border-radius: 15px;
+                background-color:#fff;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
         </style>
     </head>
     <body class="antialiased">
         <div id="app">
-            <section>
                 <div class="sidebar" >
-                    <hello-world/>
+                    <left-menu/>
                 </div>
-            </section>
+                <
+                <div class="panel">
+                    <div class="grid-container">
+                        <div class="panel-tile">
+                            <h3 class ="panel-title">Overview of activities progress</h3>
+                            <multi-bar-chart/>
+                        </div>
+                        <div class="grid-item">
+                            <h3 class ="panel-title">Hire By Department & Location</h3>
+                            <pie-chart/>
+                        </div>
+                        <div class="grid-item">
+                            <h3 class="panel-title">Part time vs Full time</h3>
+                            <line-chart/>
+                        </div>  
+                        <div class="grid-item">
+                            <h3 class="panel-title">Number of employees by Year</h3>
+                            <bar-chart/>
+                        </div>
+                    </div>
+                </div>
         </div>
 
         <script src="{{ mix('js/app.js') }}"></script>

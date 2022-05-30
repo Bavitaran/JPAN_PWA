@@ -1,18 +1,20 @@
 .sidebar {
     margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+    padding: 5% 2% 5% 2%;
+    width: 242px;
+    background-color: #0053A5;
     position: fixed;
     height: 100%;
     overflow: auto;
+    color: #cccccc;
+    text-align: center;
   }
   
   .sidebar a {
     display: block;
-    color: black;
-    padding: 16px;
+    color: #cccccc;
     text-decoration: none;
+    cursor: pointer;
   }
    
   .sidebar a.active {

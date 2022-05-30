@@ -1,5 +1,5 @@
 <template>
-  <v-card height="350px">
+  <v-card>
     <v-navigation-drawer
       absolute
       permanent
@@ -20,17 +20,18 @@
 
       <v-divider></v-divider>
 
-      <v-list dense>
+      <v-list dense class="pa-6">
         <v-list-item
           v-for="item in items"
           :key="item.title"
         >
-          <v-list-item-icon>
+          <!-- <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
+          </v-list-item-icon> -->
 
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          <v-list-item-content class="pa-6">
+            <v-list-item-title style="padding: 2% 0;">{{ item.title }}</v-list-item-title>
+            <br />
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -38,15 +39,18 @@
   </v-card>
 </template>
 <script>
-  export default {
-    data () {
-      return {
-        items: [
-          { title: 'Home', icon: 'mdi-home-city' },
-          { title: 'My Account', icon: 'mdi-account' },
-          { title: 'Users', icon: 'mdi-account-group-outline' },
-        ],
-      }
-    },
-  }
+    export default {
+        data () {
+        return {
+            items: [
+            { title: 'Main', icon: 'mdi-home-city' },
+            { title: 'Employees', icon: 'mdi-account' },
+            { title: 'Administration', icon: 'mdi-account-group-outline' },
+            { title: 'Reporting', icon: 'mdi-account-group-outline' },
+            { title: 'Applications', icon: 'mdi-account-group-outline' },
+            { title: 'Recruitment', icon: 'mdi-account-group-outline' },
+            ],
+        }
+        },
+    }
 </script>
