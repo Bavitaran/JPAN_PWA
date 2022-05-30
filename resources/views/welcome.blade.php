@@ -50,7 +50,7 @@
 
             .sidebar { grid-area: sidebar; }
             .panel { 
-                padding: 30% 0% 5% 20%;
+                padding: 30% 0% 5% 15%;
             }
             .grid-container {
                 display: grid;
@@ -67,7 +67,7 @@
                 margin-bottom: 10px;
             }
             .panel { 
-                padding: 15% 0% 5% 20%;
+                padding: 15% 5% 5% 15%;
             }
             .panel-title {
                 text-align: left;
