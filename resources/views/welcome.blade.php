@@ -79,6 +79,9 @@
                 margin-right: 10px;
                 margin-bottom: 10px;
             }
+            .pd-5{
+                padding: 50px;
+            }
         </style>
     </head>
     <body class="antialiased">
@@ -86,7 +89,6 @@
                 <div class="sidebar" >
                     <left-menu/>
                 </div>
-                <
                 <div class="panel">
                     <div class="grid-container">
                         <div class="panel-tile">
@@ -95,7 +97,7 @@
                         </div>
                         <div class="grid-item">
                             <h3 class ="panel-title">Hire By Department & Location</h3>
-                            <pie-chart/>
+                            <pie-chart class="pd-5"/>
                         </div>
                         <div class="grid-item">
                             <h3 class="panel-title">Part time vs Full time</h3>
