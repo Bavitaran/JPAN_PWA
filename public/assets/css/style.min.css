@@ -5162,7 +5162,9 @@ textarea.form-control-lg {
     background-clip: border-box;
     border: 0px solid transparent;
     border-radius: 0px;
-    height: 500px;
+}
+.card-1{
+   height: 500px;
 }
 
 .card>hr {
@@ -8877,6 +8879,10 @@ textarea.form-control-lg {
 
 .bg-purple {
     background-color: #707cd2 !important
+}
+
+.bg-blue {
+    background-color: #033e8d !important
 }
 
 .bg-inverse {

@@ -22717,8 +22717,7 @@ __webpack_require__.r(__webpack_exports__);
       chartOptions: {
         chart: {
           id: "vuechart-example",
-          background: '#fff',
-          width: '500px'
+          background: '#fff'
         },
         xaxis: {
           categories: [0, 1, 2, 3, 4, 5, 6, 7]
@@ -22827,10 +22826,6 @@ __webpack_require__.r(__webpack_exports__);
         },
         stroke: {
           curve: 'straight'
-        },
-        title: {
-          text: 'Product Trends by Month',
-          align: 'left'
         },
         grid: {
           row: {
@@ -22975,7 +22970,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_apexchart = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("apexchart");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_apexchart, {
-    width: "500",
+    width: "90%",
     type: "bar",
     options: _ctx.chartOptions,
     series: _ctx.series

@@ -103,7 +103,12 @@
                       <!-- Language -->
                       <!-- ============================================================== -->
                       <li class="ms-1 me-1">
-                          <img src="{{ asset( 'images/translate.png' ) }}">
+                            <button class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="{{ asset( 'images/translate.png' ) }}">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item dropdown-menu-right" href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
                       </li>
 
                        <!-- ============================================================== -->
@@ -206,7 +211,7 @@
               <div class="row justify-content-center">
                   <div class="col-lg-4 col-md-12">
                       <div class="white-box analytics-info">
-                          <h3 class="box-title">Agencies for hiringt</h3>
+                          <h3 class="box-title">Agencies for hiring</h3>
                           <ul class="list-inline two-part d-flex align-items-center mb-0">
                               <li>
                                   <div id="sparklinedash"><canvas width="67" height="30"
@@ -311,7 +316,7 @@
           <!-- ============================================================== -->
           <!-- footer -->
           <!-- ============================================================== -->
-          <footer class="footer text-center"> 2022 © JABATAN PERKHIDMATAN AWAM NEGERI SABAH</a>
+          <footer class="footer text-left"> 2022 © JABATAN PERKHIDMATAN AWAM NEGERI SABAH</a>
           </footer>
           <!-- ============================================================== -->
           <!-- End footer -->
