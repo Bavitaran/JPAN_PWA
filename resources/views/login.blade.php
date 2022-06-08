@@ -55,7 +55,7 @@
                 <a href="/forgot-password" for="forgot-password" class="form-label">Forgot Password</a>
               </div>
               <div class="d-grid">
-                <button class="btn text-blue main-bg"><a href="/dashboard">Login</a></button>
+                <button type="submit" class="btn text-blue main-bg">Login</button>
               </div>
             </form>
           </div>

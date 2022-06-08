@@ -103,13 +103,27 @@
                       <!-- Language -->
                       <!-- ============================================================== -->
                       <li class="ms-1 me-1">
-                            <button class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="{{ asset( 'images/translate.png' ) }}">
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item dropdown-menu-right" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <div class="btn-group">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="{{ asset( 'images/translate.png' ) }}">
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item mb-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                </div>
                             </div>
+                            <!-- <div class="btn-group">
+                                <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-share-alt"></i></button>
+                                
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-social">
+                                    <a class="dropdown-item social-facebook mb-1 rounded" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="dropdown-item social-twitter mb-1 rounded" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="dropdown-item social-youtube mb-1 rounded" href="#"><i class="fab fa-youtube"></i></a>
+
+                                    <a class="dropdown-item social-instagram rounded" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div> -->
                       </li>
+                      <li><a>MS</a></li>
 
                        <!-- ============================================================== -->
                       <!-- Notifications -->
