@@ -111,7 +111,7 @@
                                     <a class="dropdown-item mb-1" href="#"><i class="fab fa-facebook-f"></i></a>
                                 </div>
                             </div> -->
-                            <div class="text-right">
+                            <div class="text-right btn btn-group" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="{{ asset( 'images/translate.png' ) }}">
                                 <select name="language">
                                     <option value="en" {{ \Session::get('language') == 'en' ? 'selected' : '' }}>English</option>
