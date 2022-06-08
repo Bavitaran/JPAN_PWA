@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\LanguageController;
+// use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +21,8 @@ Route::get('/forgot-password', function () { return view('reset');});
 Route::get('/', function () { return view('login');});
 // Route::get('/language', function () { return view('language');});
 // Route::get('/login');
-
+Route::get('view', [LanguageController::class, 'view'])->name('view');
+Route::get('language-change', [LanguageController::class, 'changeLanguage'])->name('changeLanguage');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 // Route::get('/', [LoginController::class, 'index'])->name('login');
 // Route::post('/post-login', [LoginController::class, 'postLogin'])->name('login.post'); 
