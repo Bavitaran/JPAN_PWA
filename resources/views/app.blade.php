@@ -159,42 +159,42 @@
                           <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
                               aria-expanded="false">
                               <img src="{{ asset( 'images/dashboard.png' ) }}" class="mx-1">
-                              <span class="hide-menu mx-1"><h5>Main</h5></span>
+                              <span class="hide-menu mx-1"><h5>{{ __("language.menu1") }}</h5></span>
                           </a>
                       </li>
                       <li class="sidebar-item">
                           <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
                               aria-expanded="false">
                               <img src="{{ asset( 'images/staff.png' ) }}" class="mx-1">
-                              <span class="hide-menu mx-1"><h5>Employees</h5></span>
+                              <span class="hide-menu mx-1"><h5>{{ __("language.menu2") }}</h5></span>
                           </a>
                       </li>
                       <li class="sidebar-item">
                           <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
                               aria-expanded="false">
                               <img src="{{ asset( 'images/administration.png' ) }}" class="mx-1">
-                              <span class="hide-menu mx-1"><h5>Administration</h5></span>
+                              <span class="hide-menu mx-1"><h5>{{ __("language.menu3") }}</h5></span>
                           </a>
                       </li>
                       <li class="sidebar-item">
                           <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
                               aria-expanded="false">
                               <img src="{{ asset( 'images/reporting.png' ) }}" class="mx-1">
-                              <span class="hide-menu mx-1"><h5>Reporting</h5></span>
+                              <span class="hide-menu mx-1"><h5>{{ __("language.menu4") }}</h5></span>
                           </a>
                       </li>
                       <li class="sidebar-item">
                           <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
                               aria-expanded="false">
                               <img src="{{ asset( 'images/applications.png' ) }}" class="mx-1">
-                              <span class="hide-menu mx-1"><h5>Applications</h5></span>
+                              <span class="hide-menu mx-1"><h5>{{ __("language.menu5") }}</h5></span>
                           </a>
                       </li>
                       <li class="sidebar-item">
                           <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
                               aria-expanded="false">
                               <img src="{{ asset( 'images/recruit.png' ) }}" class="mx-1">
-                              <span class="hide-menu mx-1"><h5>Recruitment</h5></span>
+                              <span class="hide-menu mx-1"><h5>{{ __("language.menu6") }}</h5></span>
                           </a>
                       </li>
                   </ul>
@@ -220,7 +220,7 @@
               <div class="row justify-content-center">
                   <div class="col-lg-4 col-md-12">
                       <div class="white-box analytics-info">
-                          <h3 class="box-title">Agencies for hiring</h3>
+                          <h3 class="box-title">{{ __("language.card1") }}</h3>
                           <ul class="list-inline two-part d-flex align-items-center mb-0">
                               <li>
                                   <div id="sparklinedash"><canvas width="67" height="30"
@@ -233,7 +233,7 @@
                   </div>
                   <div class="col-lg-4 col-md-12">
                       <div class="white-box analytics-info">
-                          <h3 class="box-title">Success rate of the month</h3>
+                          <h3 class="box-title">{{ __("language.card2") }}</h3>
                           <ul class="list-inline two-part d-flex align-items-center mb-0">
                               <li>
                                   <div id="sparklinedash2"><canvas width="67" height="30"
@@ -246,7 +246,7 @@
                   </div>
                   <div class="col-lg-4 col-md-12">
                       <div class="white-box analytics-info">
-                          <h3 class="box-title">Recruitment conversations</h3>
+                          <h3 class="box-title">{{ __("language.card3") }}</h3>
                           <ul class="list-inline two-part d-flex align-items-center mb-0">
                               <li>
                                   <div id="sparklinedash3"><canvas width="67" height="30"
