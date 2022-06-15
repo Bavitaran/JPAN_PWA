@@ -13,5 +13,11 @@
         "card1"  => "Agencies for hiring",
         "card2"  => "Success rate of the month",
         "card3"  => "Recruitment conversations",
+        "profile"=> "Profile",
+        "orgchart"=> "Organization Chart",
+        "attendance" => "Attendance",
+        "leavedays" => "Leave Days",
+        "teaching" => "Teaching",
+        "breaktimes"=> "Break Times",
     ];
  ?>

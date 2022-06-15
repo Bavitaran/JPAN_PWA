@@ -17,6 +17,7 @@ use App\Http\Controllers\Auth\LoginController;
 
 Route::get('/dasboard_test', function () { return view('welcome');});
 Route::get('/dashboard', function () { return view('app');}); 
+Route::get('/userprofile', function () { return view('userprofile');});
 Route::get('/forgot-password', function () { return view('reset');});
 // Route::get('/', function () { return view('login');});
 // Route::get('/language', function () { return view('language');});
